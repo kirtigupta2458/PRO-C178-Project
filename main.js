@@ -1,13 +1,10 @@
 let latitude = 22.7868542, longitude = 88.3643296;
 
 // Initializing Mapbox
-mapboxgl.accessToken = 'pk.eyJ1IjoiYXBvb3J2ZWxvdXMiLCJhIjoiY2ttZnlyMDgzMzlwNTJ4a240cmEzcG0xNyJ9.-nSyL0Gy2nifDibXJg4fTA';
+mapboxgl.accessToken = '';
 
 var map = new mapboxgl.Map({
-	container: 'map',
-	style: 'mapbox://styles/mapbox/streets-v11',
-	center: [longitude, latitude],
-	zoom: 4
+	
 });
 
 map.addControl(
@@ -55,10 +52,4 @@ var marker4 = new mapboxgl.Marker({
 
 
 //Create a Victoria Memorial, Kolkata Marker and add it to the map.
-var img5 = document.querySelector("#victoria")
 
-var marker5 = new mapboxgl.Marker({
-	element: img5
-})
-	.setLngLat([88.342785, 22.546170])
-	.addTo(map);
